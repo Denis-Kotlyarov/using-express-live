@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #ffcc7e;
+    --secondary-color:  #b0efff;
+    --font-size: 2rem;
+ 
+    --bs-font-sans-serif: "Roboto", sans-serif;
+    --bs-blue: #2067F5;
+    --bs-primary: #2067F5;
+ }
+ 
+.hello {
+    font-size: var(--font-size);
+    background-color: var(--primary-color);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.bottom {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 991.98px) {
+    .text-md-sm-center {
+        text-align: justify;
+    }
+    .bottom-md {
+        border-bottom: #c7c7c7 solid 1px;
+    }
+}
