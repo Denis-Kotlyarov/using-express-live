@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-md">
             <!--LOGO-->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#../public/carnival-mask.svg">
                 <img
                     alt="Carnival"
                     src="../public/carnival-mask.svg"
@@ -88,42 +88,19 @@
     <!--CARNIVALS-->
     <div class="container px-4 mt-lg-5"> 
         <h2 class="text-center">Известные карнавалы мира</h2>
+        
         <div class="d-md-none">
-            <div>
-                <div class="card my-4">
-                    <div class="card-body">
-                        <h5 class="card-title fs-4">Карнавал Гоа</h5>
-                        <h6 class="card-subtitle fs-6 mb-2 text-muted ">Индия</h6>
-                        <small class="card-text text-body-secondary">
-                            с 10 по 13 февраля
-                        </small>
-                    </div>
+            {{#jobs}}
+                <div class="card-body">
+                    <h5 class="card-title fs-4">{{title}}</h5>
+                    <h6 class="card-subtitle fs-6 mb-2 text-muted ">{{location}}</h6>
+                    <small class="card-text text-body-secondary">
+                        {{salary}}
+                    </small>
                 </div>
-            </div>
-            <div>
-                <div class="card my-4">
-                    <div class="card-body">
-                        <h5 class="card-title fs-4">Карнавал Рио-де-Жанейро</h5>
-                        <h6 class="card-subtitle fs-6 mb-2 text-muted ">Бразилия</h6>
-                        <small class="card-text text-body-secondary">
-                            с 9 по 17 февраля
-                        </small>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card my-4">
-                    <div class="card-body">
-                        <h5 class="card-title fs-4">Карнавал Сантьяго-де-Куба</h5>
-                        <h6 class="card-subtitle fs-6 mb-2 text-muted ">Куба</h6>
-                        <small class="card-text text-body-secondary">
-                            с 18 по 27 июля
-                        </small>
-                    </div>
-                </div>
-            </div>
+            {{/jobs}}
         </div>
-    </div>
+        
     <!--TABLE-->
     <div class="d-none d-md-block my-4 col-md-8 offset-md-2">
         <table class="table table-bordered table-striped px-4">
